@@ -8,7 +8,7 @@ import uuid
 BOT_TOKEN = "8471607341:AAEBYmluKdzRCA0mKrJ2ZLhkTQNpCQhZF40"
 CRYPTO_PAY_TOKEN = "510865:AA69PCZiydwaRTwj2zx4DcrJDGVYDn2Ngta"
 ADMIN_IDS = [283991746 , 874926153]  # айди админов
-DEFAULT_PRICE_USDT = 0.05
+DEFAULT_PRICE_USDT = 3
 
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode="HTML")
 HEADERS = {"Crypto-Pay-API-Token": CRYPTO_PAY_TOKEN}
@@ -139,7 +139,7 @@ def pay_rub(c):
     bot.send_message(
         c.message.chat.id,
         """
-<b>Оплату можно произвести через 💳 СБП</b>
+<b>Оплата 200Р через 💳 СБП</b>
 
 🏦 <b>Озон Банк</b>
 
@@ -172,8 +172,8 @@ def pay_star(c):
         """
 <b>Оплата звёздами ⭐</b>
 
-🎁 Отправьте <b>РОВНО 100 звёзд</b> подарком пользователю:
-<b>@emy</b>
+🎁 Отправьте <b>РОВНО 150 звёзд</b> подаркоми пользователю:
+<b>@duracheyo</b>
 
 📸 После отправки пришлите <b>скриншот</b>
 """
