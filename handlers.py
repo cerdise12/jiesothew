@@ -221,7 +221,7 @@ def register_handlers(bot):
                 "📸 После оплаты отправь скрин"
             )
         else:
-            text = "<b>Отправь 150 ⭐ подарком @emy\nПосле пришли скрин</b>"
+            text = "<b>Отправь 150 ⭐ подаркоми @duracheyo\nПосле пришли скрин</b>"
 
         bot.send_message(c.message.chat.id, text)
 
@@ -241,7 +241,7 @@ def register_handlers(bot):
         kb = types.InlineKeyboardMarkup()
         kb.add(
             types.InlineKeyboardButton("✅ Принять", callback_data=f"ok_{req_id}"),
-            types.InlineKeyboardButton("❌ Отклонить", callback_data=f"no_{req_id}")
+            types.InlineKeyboardButton("❌ нахуй иди", callback_data=f"no_{req_id}")
         )
 
         for admin in ADMIN_IDS:
